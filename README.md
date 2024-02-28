@@ -14,4 +14,4 @@ I use neovim **btw**
 - NerdFonts to display icons
 
 ### Credits
-- ThePrimeagen ( [Tmux-sessionizer].(https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) )
+- ThePrimeagen ( [Tmux-sessionizer](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) )
