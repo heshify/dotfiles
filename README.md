@@ -12,6 +12,7 @@ I use neovim **btw**
 ### Dependecies 
 - [ripgrep](https://github.com/BurntSushi/ripgrep) for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) 
 - NerdFonts to display icons
+- [Stow](https://www.gnu.org/software/stow/) to manage dotfiles.
 
 ### Credits
 - ThePrimeagen ( [Tmux-sessionizer](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) )
