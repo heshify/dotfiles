@@ -10,8 +10,9 @@ I use neovim **btw**
 - **[LazyVim](https://www.lazyvim.org/)** : A Neovim setup powered by 💤 lazy.nvim 
 
 ### Dependecies 
-- for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) : [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [ripgrep](https://github.com/BurntSushi/ripgrep) for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) 
 - NerdFonts to display icons
+- [Stow](https://www.gnu.org/software/stow/) to manage dotfiles.
 
 ### Credits
 - ThePrimeagen ( [Tmux-sessionizer](https://github.com/ThePrimeagen/.dotfiles/blob/master/bin/.local/scripts/tmux-sessionizer) )
