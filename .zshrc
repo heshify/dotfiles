@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
   alias tmux="tmux -u"
   alias vim="nvim"
+  alias air="$HOME/go/bin/air"
 #
 export PATH=$PATH:/usr/local/go/bin
 

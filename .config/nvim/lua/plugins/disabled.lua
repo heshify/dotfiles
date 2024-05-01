@@ -22,11 +22,11 @@ return {
     enabled = false,
   },
   {
-    "nvim-lualine/lualine.nvim",
+    "echasnovski/mini.pairs",
     enabled = false,
   },
   {
-    "echasnovski/mini.pairs",
+    "lewis6991/gitsigns.nvim",
     enabled = false,
   },
 }
