@@ -16,8 +16,8 @@ require("lazy").setup({
         notify = false,
       },
       opts = {
-        -- colorscheme = "rose-pine",
-        colorscheme = "tokyonight",
+        colorscheme = "rose-pine",
+        -- colorscheme = "tokyonight",
         news = {
           lazyvim = true,
           neovim = true,
@@ -27,7 +27,6 @@ require("lazy").setup({
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.go" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
