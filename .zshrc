@@ -102,8 +102,9 @@ source $ZSH/oh-my-zsh.sh
   alias tmux="tmux -u"
   alias vim="nvim"
   alias air="$HOME/go/bin/air"
-#
+
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh

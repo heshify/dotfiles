@@ -19,7 +19,7 @@ return {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
+    enabled = true,
   },
   {
     "echasnovski/mini.pairs",
