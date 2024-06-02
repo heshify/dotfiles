@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:/usr/bin/flutter/bin
 
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
