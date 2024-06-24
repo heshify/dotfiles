@@ -3,5 +3,3 @@
 -- Add any additional options here
 --
 --
-vim.opt.guicursor = ""
-vim.opt.cursorline = false -- disable highlighting of the current line
