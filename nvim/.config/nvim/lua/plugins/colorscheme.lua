@@ -18,4 +18,19 @@ return {
       transparent = true,
     },
   },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    opts = {
+      transparent = true,
+      borderless_telescope = false,
+    },
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+    },
+  },
 }

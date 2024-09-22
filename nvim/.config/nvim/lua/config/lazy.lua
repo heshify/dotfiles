@@ -16,8 +16,8 @@ require("lazy").setup({
         notify = false,
       },
       opts = {
-        colorscheme = "rose-pine",
-        -- colorscheme = "tokyonight",
+        colorscheme = "default",
+        -- colorscheme = "cyberdream",
         news = {
           lazyvim = true,
           neovim = true,
