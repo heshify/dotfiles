@@ -11,7 +11,7 @@
 
 exec --no-startup-id /usr/libexec/gsd-xsettings
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -32,7 +32,7 @@ font pango:DejaVu Sans Mono 15
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -100,16 +100,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1. "
-set $ws2 "2. "
+set $ws1 "1 "
+set $ws2 "2 "
 set $ws3 "3"
-set $ws4 "4. "
+set $ws4 "4 "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10. "
+set $ws10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -188,12 +188,12 @@ set $highlighthigh  #524f67
 
 # Teming border and Windows --------------
 # target                 title     bg    text   indicator  border
-client.focused           $rose     $base $text  $rose      $rose
-client.focused_inactive  $text     $base $text  $subtle    $surface
-client.unfocused         $text     $base $text  $overlay   $overlay
-client.urgent            $text     $base $text  $love      $love
-client.placeholder       $base     $base $text  $overlay   $overlay
-client.background        $base
+# client.focused           $rose     $base $text  $rose      $rose
+# client.focused_inactive  $text     $base $text  $subtle    $surface
+# client.unfocused         $text     $base $text  $overlay   $overlay
+# client.urgent            $text     $base $text  $love      $love
+# client.placeholder       $base     $base $text  $overlay   $overlay
+# client.background        $base
 
 hide_edge_borders both
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -201,10 +201,10 @@ hide_edge_borders both
 bar {
         status_command i3status
         tray_output primary
-        colors {
-          background $base
-          separator $rose
-        }
+        # colors {
+        #   background $base
+        #   separator $rose
+        # }
 }
 
 # audio controls
@@ -223,7 +223,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/repo_of_culture/anime-girl-with-fl
 #wifi stuff
 exec --no-startup-id nm-applet
 
-assign [class="Gnome-terminal" ] $ws1
+assign [class="gnome-terminal" ] $ws1
 assign [class="Brave-browser" ]  $ws2
 assign [class="firefox" ]  $ws2
 assign [class="obsidian" ] $ws4
