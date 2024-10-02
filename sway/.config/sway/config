@@ -224,7 +224,7 @@ output * bg ~/Pictures/repo_of_culture/anime-girl-with-flowers-butterflies-deskt
 exec --no-startup-id nm-applet
 
 assign [class="Gnome-terminal"] workspace number $ws1
-assign [class="kitty"] workspace number $ws1
+assign [app_id="kitty"] workspace number $ws1
 assign [app_id="firefox"] workspace number $ws2
 assign [class="Brave-browser"] workspace number $ws2
 assign [class="obsidian"] workspace number $ws4
@@ -233,9 +233,8 @@ assign [class="obsidian"] workspace number $ws4
 # apt install maim xclip copyq
 
 ##  Screenshots in files
-bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/Screenshots/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
-bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
-bindsym Shift+Print exec --no-startup-id maim --format=png --select "/home/$USER/Pictures/Screenshots/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-selected.png"
+bindsym Print exec grim ~/Pictures/Screenshots/screenshot-`date +%F-%T`.png
+bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/screenshot-`date +%F-%T`.png
 
 ## Screenshots in clipboards
 bindsym Ctrl+Print exec --no-startup-id maim --format=png | xclip -selection clipboard -t image/png
