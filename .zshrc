@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
   alias air="$HOME/go/bin/air"
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/zig/
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:/usr/bin/flutter/bin
 
