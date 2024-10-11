@@ -101,17 +101,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
   alias tmux="tmux -u"
   alias vim="nvim"
-  alias air="$HOME/go/bin/air"
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/usr/local/zig/
 export PATH="$HOME/.local/bin:$PATH"
-export PATH=$PATH:/usr/bin/flutter/bin
 
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
-
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 bindkey -s ^f "tmux-sessionizer\n"
