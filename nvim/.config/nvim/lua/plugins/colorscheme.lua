@@ -19,13 +19,6 @@ return {
     },
   },
   {
-    "craftzdog/solarized-osaka.nvim",
-    opts = {
-      transparent = true,
-      borderless_telescope = false,
-    },
-  },
-  {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
@@ -33,4 +26,5 @@ return {
       transparent = true,
     },
   },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { transparent_mode = true }, }
 }
