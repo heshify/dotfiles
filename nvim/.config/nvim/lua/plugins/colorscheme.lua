@@ -1,4 +1,5 @@
 return {
+  { "blazkowolf/gruber-darker.nvim" },
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -26,5 +27,5 @@ return {
       transparent = true,
     },
   },
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { transparent_mode = true }, }
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { transparent_mode = true } },
 }
