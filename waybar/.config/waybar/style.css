@@ -2,58 +2,27 @@
   border: none;
   border-radius: 4px;
   /* `ttf-font-awesome` is required to be installed for icons */
-  font-family: "BLexMono Nerd Font", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, "BLexMono Nerd Font", Helvetica, Arial, sans-serif;
 
   /* adjust font-size value to your liking: */
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
 
   min-height: 0;
 }
 
 window#waybar {
-  background-color: #000000;
-  /*background-color: rgba(0, 0, 0, 0.9);*/
-  /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-  color: #ffffff;
-  /* transition-property: background-color; */
-  /* transition-duration: .5s; */
-  /* border-radius: 0; */
+  background-color: #191724;
+  color: #e0def4;
 }
-
-/* window#waybar.hidden {
-    opacity: 0.2;
-} */
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-/* window#waybar.termite {
-    background-color: #000000;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-} */
 
 #workspaces button {
-  /* padding: 0 0.4em; */
-  /* background-color: transparent; */
-  color: #ffffff;
-  /* Use box-shadow instead of border so the text isn't offset */
-  /*box-shadow: inset 0 -3px transparent;*/
+  color: #e0def4;
 }
 
 #workspaces button.active {
-  background-color: #2d3436;
-  /*background-color: #2980b9;*/
+  background-color: #26233a;
+  color: #e0def4;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -110,18 +79,18 @@ window#waybar.chromium {
 }
 
 #clock {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: white;
 }
 
 #battery {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: white;
 }
 
 #battery.charging {
   color: #ffffff;
-  background-color: #000000;
+  /*background-color: #000000;*/
 }
 
 #power-profiles-daemon {
@@ -129,17 +98,17 @@ window#waybar.chromium {
 }
 
 #power-profiles-daemon.performance {
-  background-color: #f53c3c;
+  background-color: #eb6f92;
   color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-  background-color: #2980b9;
+  background-color: #9ccfd8;
   color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-  background-color: #2ecc71;
+  background-color: #31748f;
   color: #000000;
 }
 @keyframes blink {
@@ -164,22 +133,22 @@ label:focus {
 }
 
 #cpu {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: #ffffff;
 }
 
 #memory {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: white;
 }
 
 #backlight {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: white;
 }
 
 #network {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: white;
 }
 
@@ -188,12 +157,12 @@ label:focus {
 }
 
 #pulseaudio {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: #ffffff;
 }
 
 #pulseaudio.muted {
-  background-color: #000000;
+  /*background-color: #000000;*/
   color: #ffffff;
 }
 
@@ -220,7 +189,7 @@ label:focus {
 }
 
 #tray {
-  background-color: #2980b9;
+  background-color: #9ccfd8;
 }
 
 #idle_inhibitor {
