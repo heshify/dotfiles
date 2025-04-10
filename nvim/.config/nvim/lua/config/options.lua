@@ -3,3 +3,6 @@
 -- Add any additional options here
 --
 vim.opt.cursorline = false
+vim.opt.colorcolumn = "80"
+
+vim.g.lazyvim_picker = "telescope"

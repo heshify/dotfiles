@@ -2,9 +2,9 @@ return {
 
   -- UI
   { "folke/noice.nvim", enabled = false },
-  { "rcarriga/nvim-notify", enabled = false },
+  { "rcarriga/nvim-notify", enabled = true },
 
-  { "nvim-lualine/lualine.nvim", enabled = false },
+  { "nvim-lualine/lualine.nvim", enabled = true },
   -- editor
   { "folke/flash.nvim", enabled = false },
   {
