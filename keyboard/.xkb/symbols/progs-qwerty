@@ -18,7 +18,7 @@ xkb_symbols "progs-qwerty" {
     key <AE12> { [ bar, grave, dead_tilde ] }; // + -> |, Shift++ -> (none)
 
     // Other keys
-    key <AD12> { [ numbersign, exclam ] }; // [ -> !, Shift+[ -> #
+    key <AD12> { [ numbersign, backslash ] }; // [ -> \, Shift+[ -> #
     key <BKSL> { [ at, asciicircum ] }; // ] -> @, Shift+] -> ^
     key <AD11> { [ minus, underscore ] }; // \ -> -, Shift+\ -> _
     key <TLDE> { [ dollar, asciitilde ] }; // ` -> $, Shift+` -> ~
