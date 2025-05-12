@@ -1,0 +1,25 @@
+xkb_symbols "progs-qwerty" {
+    // Include the rest of the US layout to avoid breaking other keys
+    include "us(basic)"
+    name[Group1] = "Programmer's qwerty";
+
+    // Number row (base layer)
+    key <AE01> { [ plus, 1 ] };       // 1 -> +, Shift+1 -> 1
+    key <AE02> { [ bracketleft, 2 ] }; // 2 -> [, Shift+2 -> 2
+    key <AE03> { [ braceleft, 3 ] };  // 3 -> {, Shift+3 -> 3
+    key <AE04> { [ parenleft, 4 ] };  // 4 -> (, Shift+4 -> 4
+    key <AE05> { [ ampersand, 5 ] };  // 5 -> &, Shift+5 -> 5
+    key <AE06> { [ equal, 6 ] };      // 6 -> =, Shift+6 -> 6
+    key <AE07> { [ parenright, 7 ] }; // 7 -> ), Shift+7 -> 7
+    key <AE08> { [ braceright, 8 ] }; // 8 -> }, Shift+8 -> 8
+    key <AE09> { [ bracketright, 9 ] }; // 9 -> ], Shift+9 -> 9
+    key <AE10> { [ asterisk, 0 ] };    // 0 -> *, Shift+0 -> 0
+    key <AE11> { [ exclam, percent ] }; // - -> !, Shift+- -> %
+    key <AE12> { [ bar, grave, dead_tilde ] }; // + -> |, Shift++ -> (none)
+
+    // Other keys
+    key <AD12> { [ numbersign, exclam ] }; // [ -> !, Shift+[ -> #
+    key <BKSL> { [ at, asciicircum ] }; // ] -> @, Shift+] -> ^
+    key <AD11> { [ minus, underscore ] }; // \ -> -, Shift+\ -> _
+    key <TLDE> { [ dollar, asciitilde ] }; // ` -> $, Shift+` -> ~
+};
