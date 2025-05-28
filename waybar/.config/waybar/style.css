@@ -2,7 +2,7 @@
   border: none;
   border-radius: 4px;
   /* `ttf-font-awesome` is required to be installed for icons */
-  font-family: Ubuntu, "BLexMono Nerd Font", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, "BlexMono Nerd Font", Helvetica, Arial, sans-serif;
 
   /* adjust font-size value to your liking: */
   font-size: 12px;
@@ -189,7 +189,8 @@ label:focus {
 }
 
 #tray {
-  background-color: #9ccfd8;
+  background-color: #111111;
+  color: #e0def4;
 }
 
 #idle_inhibitor {
