@@ -4,7 +4,27 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+ 
+fpath=(~/.zsh/zsh-completions/src $fpath)
+autoload -Uz compinit
+compinit
+ 
+# Menu select for tab
+zstyle ':completion:*' menu select
+ 
+# Set history file location and size
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
+# Share history between all zsh sessions
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+
+# Make sure each command is appended immediately, not just on shell exit
+setopt APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+ 
 # plugins 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -14,6 +34,11 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 alias tmux="tmux -u"
 alias vim="nvim"
 alias vi="\vim"
+
+alias ls="ls -p -G"
+alias la="ls -A"
+alias ll="ls -l"
+alias lla="ll -A"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
